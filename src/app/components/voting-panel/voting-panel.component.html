@@ -1,0 +1,17 @@
+<div class="voting-panel">
+  <div class="inner-voting-panel">
+    <div class="question-panel">
+      <p>Question:</p>
+      <h2>Should Mankind colonize the Earth?</h2>
+    </div>
+    <div class="result-panel">
+      <div class="answer-element agree">Agree: {{agreeVotesCounter}}</div>
+      <div class="answer-element disagree">Disagree: {{disagreeVotesCounter}}</div>
+    </div>
+    <ul class="voters">
+      <li *ngFor="let voter of listOfVoters">
+        <app-voter [voter]="voter" (updateVotes) ="updateVoteCount($event)"></app-voter>
+      </li>
+    </ul>
+  </div>
+</div>

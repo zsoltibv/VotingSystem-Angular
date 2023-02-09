@@ -1,0 +1,28 @@
+* {
+  font-family: "Inter", sans-serif;
+  color: white;
+}
+
+.voting-panel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.result-panel {
+  display: flex;
+  gap: 30px;
+}
+
+.voters {
+  margin-top: 50px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul > li {
+  margin-top: 25px;
+}

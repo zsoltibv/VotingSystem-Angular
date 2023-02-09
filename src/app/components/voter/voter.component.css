@@ -1,0 +1,41 @@
+* {
+  color: white;
+}
+
+button {
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+}
+
+button:hover{
+  cursor: pointer;
+}
+
+.agree {
+  background-color: #16a34a;
+}
+
+.disagree {
+  background-color: #dc2626;
+}
+
+.disabled{
+  background-color: gray;
+}
+
+.voting-options {
+  display: flex;
+  gap: 10px;
+}
+
+.voter{
+  background-color: #4b5563;
+  padding: 25px;
+  border-radius: 8px;
+}
+
+h2{
+  margin-top: 10px;
+}

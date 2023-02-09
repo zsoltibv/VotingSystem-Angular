@@ -1,0 +1,25 @@
+<div class="voter">
+  <div class="name-panel">
+    <h2>{{ voter.name }}</h2>
+    <div class="voting-options">
+      <button
+        #agreeButton
+        class="agree"
+        value="agree"
+        [ngClass]="{ disabled: voter.vote != 'none' }"
+        (click)="updateVote(agreeButton.value)"
+      >
+        Agree
+      </button>
+      <button
+        #disagreeButton
+        class="disagree"
+        value="disagree"
+        (click)="updateVote(disagreeButton.value)"
+        [ngClass]="{ disabled: voter.vote != 'none' }"
+      >
+        Disagree
+      </button>
+    </div>
+  </div>
+</div>
